@@ -1,4 +1,50 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+/* .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+  }
+  
+  header {
+    flex: 0 0 10%; 
+  }
+  
+  .main-content {
+    flex: 1 0 80%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34; 
+    color: white;
+  }
+  
+  footer {
+    flex: 0 0 10%;
+  }
+   */
+   /* src/index.css */
+/* src/index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  } */
+  
+  html {
+    /* Removed scroll-behavior: smooth; */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,340 @@
+/* Reset margins, paddings, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body and html occupy the full height of the screen */
+/* html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+} */
+
+/* Remove the default white background color */
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* src/components/Header.css */
+.header {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 10px 10% ;
+  /* position: ; */
+  /* top: -1px; */
+}
+
+.header-left img {
+  height: 4vh;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.header-left a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+.landing-page {
+  height: 100vh;
+  background-color: #2A4365;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* src/components/Projects.css */
+.wrapper-pr{
+  /* border: 2px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14532D;
+  */
+
+  /* ---------------------------- */
+  background-color: #14532D;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 3%; */
+  min-height: 100vh;
+  /* ---------------------------- */
+}
+
+.projects {
+  /* background-color: red;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  padding: 10%;
+  text-align: center; */
+
+  /* display: flex; */
+  /* background-color: red; */
+  /* flex-direction: row; */
+  /* border: red solid 2px; */
+  /* border: solid 1px black; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 10%;
+  /* width: 80%; */
+  min-height: 100%;
+  /* margin: 0 auto; */
+  /* background-color: #512DA8; */
+  /* color: white; */
+}
+
+
+
+.projects-title {
+  /* font-size: 2rem; */
+  /* margin-bottom: 100px; */
+  align-self: self-start;
+  /* border: black solid 2px; */
+  margin-bottom: 80px;
+  /* align-self: self-start; */
+  font-size: 2.5rem;
+}
+
+.project-cards {
+  /* border: 2px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly two columns */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Centers grid items horizontally */
+}
+
+.project-card {
+  background-color: white;
+  color: #14532D;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #14532D;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  color: #0A3928;
+}
+
+/* src/components/ContactMe.css */
+.wrapper-cm{
+  background-color: #512DA8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10%; */
+  height: 100vh;
+
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  /* border: solid 1px black; */
+  align-items: center;
+  padding: 10%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: #512DA8; */
+  color: white;
+  /* padding: 50px 20px; */
+  /* margin: 20p; */
+}
+
+.contact-me h1{
+  margin-bottom: 80px;
+  align-self: self-start;
+  font-size: 2.5rem;
+
+}
+
+.contact-form input, .contact-form textarea, .contact-form label {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #512DA8;
+  color: white;
+  /* border: none; */
+  border: solid 0.5px white;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+  font-size: large;
+  
+}
+
+.contact-form button {
+  background-color: #8d63f0;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  /* border: 2; */
+  cursor: pointer;
+  font: bold;
+  font-size: large;
+  
+  
+}
+
+/* src/components/Footer.css */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  /* margin-top: 30px; */
+  /* height: auto; */
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.footer-statement {
+  font-size: 1em;
+  margin: 0;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  .header, .footer {
+    flex: 0 0 12%; /* Slightly larger header/footer on mobile */
+  }
+
+  .main-content {
+    flex: 1 0 76%; /* Adjusted for header/footer */
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .header-right {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background: black;
+    width: 150px;
+    display: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .header-right.active {
+    display: flex;
+  }
+
+  .header-right a {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .project-cards {
+    grid-template-columns: 1fr; /* Stacks into one column for smaller screens */
+  }
+
+}
+
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+

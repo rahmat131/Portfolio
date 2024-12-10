@@ -1,11 +1,21 @@
-import './App.css';
+// src/App.js
+import React from "react";
+import Header from "./components/Header";
+import LandingPage from "./components/LandingPage";
+import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <h1>Hello World!</h1>
+    <div>
+      <Header />
+      <LandingPage />
+      <Projects />
+      <ContactMe />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
