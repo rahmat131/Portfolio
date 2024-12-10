@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
-import p1Image from "./img/p1.jpg";
-import p2Image from "./img/p2.jpg";
-import p3Image from "./img/p3.jpg";
+import p1Image from "./img/CV.png";
+import p2Image from "./img/LL.png";
+import p3Image from "./img/Store.png";
 // import p4Image from "./img/p4.jpg";
 
 const Projects = () => {
@@ -19,22 +19,16 @@ const Projects = () => {
       image: p2Image, // Replace with actual image path
       title: "Little Lemon Restaurant",
       description: "A hands-on project prepared while learning 'Meta Front End'.",
-      link: "https://littlelemon-restaurant.com",
+      link: "https://little-lemon-opal.vercel.app/",
     },
     {
       id: 3,
       image: p3Image, // Replace with actual image path
       title: "My Store",
       description: "A hands-on project prepared while learning 'Meta Front End'.",
-      link: "https://littlelemon-restaurant.com",
+      link: "https://my-store-flame-one.vercel.app/",
     },
-    {
-      id: 4,
-      image: p2Image, // Replace with actual image path
-      title: "Test",
-      description: "A hands-on project prepared while learning 'Meta Front End'.",
-      link: "https://littlelemon-restaurant.com",
-    },
+ 
   ];
 
   return (
